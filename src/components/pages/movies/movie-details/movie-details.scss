@@ -1,0 +1,21 @@
+.movie-details {
+  margin-top: 20px;
+
+  &__header {
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  &__image {
+    margin-right: 40px;
+    width: 240px;
+    height: 360px;
+  }
+
+  &__title,
+  &__year,
+  &__genres,
+  &__rating {
+    margin-bottom: 20px;
+  }
+}

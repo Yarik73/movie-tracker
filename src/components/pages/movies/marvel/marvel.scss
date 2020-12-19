@@ -1,0 +1,40 @@
+.marvel {
+
+  &__title {
+    margin-top: 20px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 246px;
+    height: 360px;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: rgba(0,0,0,.5);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      transition: .3s;
+      pointer-events: none;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+}
